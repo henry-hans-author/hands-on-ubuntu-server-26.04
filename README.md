@@ -2,7 +2,7 @@
 
 **Learning and Using Ubuntu Server in the AI Era** · by Henry Hans · First Edition, 2026
 
-<img src="images/cover.jpg" alt="Cover of Hands-On Ubuntu Server 26.04 LTS" width="280" align="right">
+<img src="cover.jpg" alt="Cover of Hands-On Ubuntu Server 26.04 LTS" width="280" align="right">
 
 > AI can write the command. Only practice tells you whether it's right.
 
