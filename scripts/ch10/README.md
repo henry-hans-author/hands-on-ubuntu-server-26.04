@@ -6,3 +6,5 @@
 | `k8s_verify.sh` | 10.6–10.7 Kubernetes + WordPress | `master` / `node` |
 
 See the BEFORE YOU RUN notes in each file.
+
+Run with `sudo bash <script>.sh <role>`, or `chmod +x *.sh` first.
