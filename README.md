@@ -8,10 +8,12 @@
 
 This is the companion repository for *Hands-On Ubuntu Server 26.04 LTS*. Every procedure in the book was carried out step by step on Ubuntu Server 26.04 LTS, and wherever reality disagreed with the documentation, the book reports what actually happened and how to fix it. This repository keeps that promise going after publication: confirmed errata, updates for newer software versions, and a place to report problems.
 
-- **Paperback:** Amazon (link added at launch) · ISBN 979-8-16-385308-3 · 342 pages, 7.5 × 9.25 in
+- **Paperback:** [Amazon](https://www.amazon.com/dp/B0HPH4NRB4) · ISBN 979-8-16-385308-3 · 342 pages, 7.5 × 9.25 in
+- **Kindle:** [Amazon](https://www.amazon.com/dp/B0HL2DNXSC)
 - **Errata:** [ERRATA.md](ERRATA.md)
 - **Updates for newer software versions:** [UPDATES.md](UPDATES.md)
 - **Report a problem:** [open an issue](../../issues/new/choose)
+- **Lab verification scripts:** [scripts/](scripts/) — run them after each lab to check your setup (PASS/FAIL summary)
 
 <br clear="right">
 
