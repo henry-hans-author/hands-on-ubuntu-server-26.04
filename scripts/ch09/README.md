@@ -7,3 +7,5 @@
 | `haproxy_verify.sh` | 9.2.2 HAProxy | `lb` / `web` |
 
 Edit `IFACE` and `VIP` at the top of each script before running. See the BEFORE YOU RUN notes in each file.
+
+Run with `sudo bash <script>.sh <role>`, or `chmod +x *.sh` first.
