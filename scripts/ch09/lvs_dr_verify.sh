@@ -101,9 +101,11 @@ if [ "$ROLE" == "lvs" ]; then
 
 elif [ "$ROLE" == "web" ]; then
     step "1. ARP suppression kernel parameters (lo, all, AND the real NIC $IFACE)"
-    # Lab finding: setting these only on lo and all is not enough. If the real NIC
-    # (e.g. ens33) is left at its default, the real server answers ARP for the VIP
-    # and clients bypass the director entirely.
+    # Per the kernel docs, the max of conf/all and conf/<iface> is used, so the
+    # 'all' values should already cover the NIC. We still check the NIC explicitly:
+    # in our lab a backend answered ARP for the VIP until the NIC values were set,
+    # most likely because the 'all' values were not actually in effect. Always
+    # confirm the live values with sysctl and arping, not just the config file.
     for dev in lo all "$IFACE"; do
         for key in arp_ignore arp_announce; do
             p="net.ipv4.conf.${dev}.${key}"
