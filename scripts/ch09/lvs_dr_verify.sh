@@ -12,9 +12,9 @@
 # BEFORE YOU RUN -- adjust these to your environment:
 #   IFACE  The real NIC on BOTH the director and the real servers. The book uses
 #          ens33 (VMware default). Find yours with: ip -br link
-#          On real servers this matters twice: ARP suppression must be set on this
-#          NIC too (not only on lo and all), and the persistent sysctl file must
-#          contain net.ipv4.conf.<IFACE>.arp_ignore / arp_announce.
+#          On real servers this script also checks ARP suppression on this NIC and
+#          expects net.ipv4.conf.<IFACE>.arp_ignore / arp_announce in the persistent
+#          sysctl file (belt and braces; see the note in the 'web' section).
 #   VIP    Must be the same on the director (bound to IFACE) and on every real
 #          server (bound to lo).
 #   The director and real servers must be on the same Layer 2 network (DR mode).
